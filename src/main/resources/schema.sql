@@ -1,0 +1,8 @@
+-- mysql dialect
+DROP TABLE IF EXISTS CUSTOMER;
+
+CREATE TABLE CUSTOMER(
+    customer_id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(20) NOT NULL,
+    date_of_birth DATE NOT NULL
+);

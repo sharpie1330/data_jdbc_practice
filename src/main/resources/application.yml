@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: data-jdbc-practice
+  datasource:
+    url: jdbc:mysql://localhost:3306/data_jdbc
+    username: sharpie1330
+    password: 1330
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  sql:
+    init:
+      mode: always
