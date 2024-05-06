@@ -5,6 +5,7 @@ DROP TABLE IF EXISTS purchase_order;
 drop table if exists book_author;
 drop table if exists book;
 drop table if exists author;
+drop table if exists minion;
 
 CREATE TABLE customer (
                           customer_id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -39,4 +40,9 @@ CREATE TABLE book_author(
     author BIGINT NOT NULL,
     FOREIGN KEY (book) REFERENCES book (book_id),
     FOREIGN KEY (author) REFERENCES author (author_id)
+);
+
+CREATE TABLE minion(
+    minion_id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name varchar(50)
 );
